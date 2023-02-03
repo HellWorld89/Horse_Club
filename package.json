@@ -14,13 +14,14 @@
   },
   "homepage": "https://github.com/HellWorld89/Horse_Club#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-less": "^5.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-stylelint": "^13.0.0",
-    "postcss": "^8.4.21",
-    "stylelint": "^14.16.1"
+    "postcss": "^8.4.21"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
