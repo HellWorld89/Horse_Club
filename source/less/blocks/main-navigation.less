@@ -1,0 +1,105 @@
+.main-navigation {
+}
+.main-navigation__button {
+    cursor: pointer;
+}
+.main-navigation__list {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    list-style-type: none;
+    background: #0D0D0D;
+    opacity: 0.95;
+    z-index: 1;
+    font-family: "Roboto","Verdana", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 5px solid #008139;
+}
+
+.main-navigation--closed .main-navigation__list {
+    display: none;
+}
+
+// .main-navigation--closed.main-navigation__button-close {
+//    display: none;
+// }
+
+.main-navigation--opened .main-navigation__button-close {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    opacity: 0.95;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 100;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 1px;
+        width: 17px;
+        height: 1px;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+  
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+  
+    &::after {
+        transform: rotate(-45deg);
+    }
+  
+    &:active::before,
+    &:active::after {
+        background-color: fade(#ffffff, 30%);
+    }
+}
+
+@media (max-width: @mobile-width-only) {
+    .main-navigation--closed .main-navigation__item {
+        display: none;
+    }
+  
+    .main-navigation--opened .main-navigation__item {
+        display: block;
+    }
+  
+    .main-navigation--nojs .main-nav__toggle {
+        display: none;
+    }
+  
+    .main-navigation--nojs .main-navigation__list {
+        position: fixed;
+    }
+  
+}
+
+.main-navigation__item {
+    
+}
+.main-navigation__link {
+    color:#ffffff ;
+    text-decoration: none;
+}
+.main-navigation__phone {
+    display: none;
+}
+.main-navigation__note {
+    display: none;
+}
