@@ -1,0 +1,109 @@
+.directions__wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("/img/320/directions_background320.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 128px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/img/320/horse_girl320.png");
+    background-repeat: no-repeat;
+    bottom: 69px;
+    left: 0;
+    width: 86px;
+    height: 149px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/img/320/horse_boy320.png");
+    background-repeat: no-repeat;
+    bottom: 76px;
+    right: 0;
+    width: 66px;
+    height: 141px;
+  }
+}
+
+.directions__title {
+  padding: 0;
+  margin: 0;
+  .title-second();
+  padding-bottom: 10px;
+}
+
+.directions__text {
+  padding: 0;
+  margin: 0;
+  .subtext();
+  padding-bottom: 55px;
+}
+
+.directions__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.directions__item {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  margin-bottom: 60px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.directions__image {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: -20px;
+  padding-bottom: 15px;
+}
+
+.directions__caption {
+  margin: 0;
+  .directions-caption();
+  padding: 0 45px 21px;
+}
+
+.directions__desc {
+  padding: 0 10px 33px;
+  margin: 0;
+  .advantages-desc();
+}
+
+.directions__button-wrapper {
+  padding: 30px 8px 10px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("/img/320/cloud320.png");
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    height: 89px;
+  }
+}
+
+.directions__button {
+  text-align: center;
+}

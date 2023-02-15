@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 16px 51px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  margin: 99px 10px 287px;
+  padding-bottom: 40px;
+}
+
+.form__title {
+  .title-second();
+  margin: 40px 43px 15px;
+}
+
+.form__desc {
+  .advantages-desc();
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__name-input {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: #a5a5a5;
+  background: #ffffff;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+  padding: 19px 30px 18px 14px;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__button {
+  margin: 20px 0 25px;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.form__mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: hwb(0 100% 0%);
+  border: 1px solid hwb(47 0% 0%);
+  border-radius: 2px;
+  left: 0;
+}
+
+.form__checkbox[type="checkbox"]:checked + .form__mark::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 7px;
+  left: 4px;
+  width: 5px;
+  height: 2px;
+  background: #008139;
+  transform: rotate(45deg);
+}
+
+.form__checkbox[type="checkbox"]:checked + .form__mark::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 6px;
+  left: 6px;
+  width: 7px;
+  height: 2px;
+  background: #008139;
+  transform: rotate(-45deg);
+}
+
+.form__name {
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8a8a8a;
+}
