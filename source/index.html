@@ -13,33 +13,36 @@
         <section class="main-header__header">
             <h1 class="visually-hidden">Конный клуб Максимус.</h1>
             <div class="main-header__wrapper">
-                <a class="main-header__logo-link" href="#">
-                    <img class="main-header__logo-image" src="/img/320/logo320.png" alt="Логотип конного клуба Максимус">
-                </a>
-                <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-                    <button class="main-navigation__button" type="button">Меню</button>
-                    <a class="main-navigation__button-close"><span class="visually-hidden">Закрыть меню.</span></a>
-                    <ul class="main-navigation__list">
-                        <li class="main-navigation__item">
-                            <a class="main-navigation__link" href="">О нас</a>
-                        </li>
-                        <li class="main-navigation__item">
-                            <a class="main-navigation__link" href="">Услуги и цены</a>
-                        </li>
-                        <li class="main-navigation__item">
-                            <a class="main-navigation__link" href="">Фотоальбом</a>
-                        </li>
-                        <li class="main-navigation__item">
-                            <a class="main-navigation__link" href="">Контакты</a>
-                        </li>
-                    </ul>
-                    <a class="main-navigation__phone" href="tel:+7(000)000-00-00">7 (000) 000-00-00</a>
-                    <span class="main-navigation__note">Ежедневно 9:00 – 22:00</span>
-                </nav>
+                <div class="main-header__container"><a class="main-header__logo-link" href="#">
+                        <img class="main-header__logo-image" src="/img/320/logo320.png"
+                            alt="Логотип конного клуба Максимус">
+                    </a>
+                    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+                        <button class="main-navigation__button" type="button">Меню</button>
+                        <a class="main-navigation__button-close"><span class="visually-hidden">Закрыть меню.</span></a>
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item">
+                                <a class="main-navigation__link" href="">О нас</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a class="main-navigation__link" href="">Услуги и цены</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a class="main-navigation__link" href="">Фотоальбом</a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a class="main-navigation__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                        <a class="main-navigation__phone" href="tel:+7(000)000-00-00">7 (000) 000-00-00</a>
+                        <span class="main-navigation__note">Ежедневно 9:00 – 22:00</span>
+                    </nav>
+                </div>
+
                 <section class="hero">
                     <div class="hero__wrapper">
-        
-                        <h2 class="hero__title">Окунитесь в мир
+
+                        <h2 class="hero__title">Окунитесь в мир<br>
                             лошадей вместе с нами</h2>
                         <p class="hero__text">Уроки верховой езды, фотосессии и мероприятия
                             в частном конном клубе <strong>г. Санкт-Петербург</strong></p>
@@ -54,16 +57,16 @@
             <div class="about-us__wrapper">
                 <h2 class="about-us__title">О нашем клубе</h2>
                 <ul class="about-us__list">
-                    <li class="about-us__item">1100+<p class="about-us__text">Довольный посетителей
+                    <li class="about-us__item">1100+<p class="about-us__text">Довольный посетителей<br>
                             за последний год</p>
                     </li>
-                    <li class="about-us__item">50+<p class="about-us__text">Проведенных мероприятий
+                    <li class="about-us__item">50+<p class="about-us__text">Проведенных мероприятий<br>
                             за 6 месяцев</p>
                     </li>
-                    <li class="about-us__item">20+<p class="about-us__text">Выпущенных профессиональных
+                    <li class="about-us__item">20+<p class="about-us__text">Выпущенных профессиональных<br>
                             спортсменов за 1 год</p>
                     </li>
-                    <li class="about-us__item">15+<p class="about-us__text">Регулярный занятий в неделю
+                    <li class="about-us__item">15+<p class="about-us__text">Регулярный занятий в неделю<br>
                             с профессиональными наставниками</p>
                     </li>
                 </ul>
@@ -82,22 +85,89 @@
 
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <img class="advantages__image" src="#" alt="Маршрут от точки А до точки Б.">
+                        <picture>
+                            <source media="(min-width: 1920px)"
+                                srcset="/img/1920/map1920.jpg 1x, /img/1920/map1920@2x.jpg 2x" width="113" height="95"
+                                alt="Маршрут от точки А до точки Б.">
+                            <source media="(min-width: 1000px)"
+                                srcset="/img/1000/map1000.jpg 1x, /img/1000/map1000@2x.jpg 2x" width="80" height="81"
+                                alt="Маршрут от точки А до точки Б.">
+                            <source media="(min-width: 768px)"
+                                srcset="/img/768/map768.jpg 1x, /img/768/map768@2x.jpg 2x" width="60" height="60"
+                                alt="Маршрут от точки А до точки Б.">
+                            <source media="(min-width: 480px)"
+                                srcset="/img/480/map480.jpg 1x, /img/480/map480@2x.jpg 2x" width="86" height="60"
+                                alt="Маршрут от точки А до точки Б.">
+                            <img class="advantages__image" width="171" height="60" src="/img/320/map320.jpg"
+                                srcset="/img/320/map320@2x.jpg" alt="Маршрут от точки А до точки Б.">
+                        </picture>
+
                         <h3 class="advantages__caption">Удобное расположение</h3>
                         <p class="advantages__desc">Мы находимся недалеко
                             от автостанции «Восточный» чтобы вам было удобно добираться</p>
                     </li>
-                    <li><img class="advantages__image" src="#" alt="Деревянный стол и две лавочки.">
+                    <li class="advantages__item">
+                        <picture>
+                            <source media="(min-width: 1920px)"
+                                srcset="/img/1920/table1920.jpg 1x, /img/1920/table1920@2x.jpg 2x" width="156"
+                                height="98" alt="Деревянный стол и две лавочки.">
+                            <source media="(min-width: 1000px)"
+                                srcset="/img/1000/table1000.jpg 1x, /img/1000/table1000@2x.jpg 2x" width="113"
+                                height="86" alt="Деревянный стол и две лавочки.">
+                            <source media="(min-width: 768px)"
+                                srcset="/img/768/table768.jpg 1x, /img/768/table768@2x.jpg 2x" width="102" height="78"
+                                alt="Деревянный стол и две лавочки.">
+                            <source media="(min-width: 480px)"
+                                srcset="/img/480/table480.jpg 1x, /img/480/table480@2x.jpg 2x" width="106" height="67"
+                                alt="Деревянный стол и две лавочки.">
+                            <img class="advantages__image" width="192" height="67" src="/img/320/table320.jpg"
+                                srcset="/img/320/table320@2x.jpg" alt="Деревянный стол и две лавочки.">
+                        </picture>
+
                         <h3 class="advantages__caption">Обеденная зона </h3>
                         <p class="advantages__desc">Имеется столовая, чтобы
                             Вы могли перекусить и немного отдохнуть. Бесплатно чай, кофе, печенки.</p>
                     </li>
-                    <li><img class="advantages__image" src="#" alt="Секундомер.">
+                    <li class="advantages__item">
+                        <picture>
+                            <source media="(min-width: 1920px)"
+                                srcset="/img/1920/timemeter1920.jpg 1x, /img/1920/timemeter1920@2x.jpg 2x" width="113"
+                                height="95" alt="Секундомер.">
+                            <source media="(min-width: 1000px)"
+                                srcset="/img/1000/timemeter1000.jpg 1x, /img/1000/timemeter1000@2x.jpg 2x" width="80"
+                                height="81" alt="Секундомер.">
+                            <source media="(min-width: 768px)"
+                                srcset="/img/768/timemeter768.jpg 1x, /img/768/timemeter768@2x.jpg 2x" width="60"
+                                height="60" alt="Секундомер.">
+                            <source media="(min-width: 480px)"
+                                srcset="/img/480/timemeter480.jpg 1x, /img/480/map480@2x.jpg 2x" width="86" height="60"
+                                alt="Секундомер.">
+                            <img class="advantages__image" width="106" height="90" src="/img/320/timemeter320.jpg"
+                                srcset="/img/320/timemeter320@2x.jpg" alt="Секундомер.">
+                        </picture>
+
                         <h3 class="advantages__caption">Профессиональные тренера</h3>
                         <p class="advantages__desc">Наши преподаватели имеют награды в конном спорте, и отличные отзывы
                             среди наших учеников</p>
                     </li>
-                    <li><img class="advantages__image" src="#" alt="Легковой автомобиль на парковке.">
+                    <li class="advantages__item">
+                        <picture>
+                            <source media="(min-width: 1920px)"
+                                srcset="/img/1920/car1920.jpg 1x, /img/1920/car1920@2x.jpg 2x" width="151" height="130"
+                                alt="Легковой автомобиль на парковке.">
+                            <source media="(min-width: 1000px)"
+                                srcset="/img/1000/car1000.jpg 1x, /img/1000/car1000@2x.jpg 2x" width="111" height="110"
+                                alt="Легковой автомобиль на парковке.">
+                            <source media="(min-width: 768px)"
+                                srcset="/img/768/car768.jpg 1x, /img/768/car768@2x.jpg 2x" width="93" height="92"
+                                alt="Легковой автомобиль на парковке.">
+                            <source media="(min-width: 480px)"
+                                srcset="/img/480/car480.jpg 1x, /img/480/car480@2x.jpg 2x" width="96" height="78"
+                                alt="Легковой автомобиль на парковке.">
+                            <img class="advantages__image" width="106" height="65" src="/img/320/car320.jpg"
+                                srcset="/img/320/car320@2x.jpg" alt="Легковой автомобиль на парковке.">
+                        </picture>
+
                         <h3 class="advantages__caption">Бесплатная парковка</h3>
                         <p class="advantages__desc">У нас имеется просторная парковка, чтобы вы могли без проблем
                             припарковать свой автомобиль
@@ -113,8 +183,24 @@
                 <ul class="directions__list">
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#" alt="Девушка верхом на лошади." width="250"
-                                height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo6.jpg 1x, /img/1920/1920photo6@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo6.jpg 1x, /img/1000/1000photo6@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo6.jpg 1x, /img/768/768photo6@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo6.jpg 1x, /img/480/480photo6@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo6.jpg"
+                                    srcset="/img/320/320photo6@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
+
                             <h3 class="directions__caption">Уроки верховой езды</h3>
                             <p class="directions__desc">Уроки профессиональной верховой езды
                                 для любителей и начинающих</p>
@@ -122,8 +208,23 @@
                     </li>
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#" alt="Девушка верхом на лошади прыгает через барьер"
-                                width="250" height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo5.jpg 1x, /img/1920/1920photo5@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo5.jpg 1x, /img/1000/1000photo5@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo5.jpg 1x, /img/768/768photo5@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo5.jpg 1x, /img/480/480photo5@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo5.jpg"
+                                    srcset="/img/320/320photo5@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
                             <h3 class="directions__caption">Прогулки верхом с тренером</h3>
                             <p class="directions__desc">Тренировка клиентов, подготовка
                                 к занятиям конным спортом на профессиональном уровне под руководством опытных тренеров
@@ -132,9 +233,23 @@
                     </li>
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#"
-                                alt="Девушка на лошади с белой гривой, на фоне заснеженное поле" width="250"
-                                height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo4.jpg 1x, /img/1920/1920photo4@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo4.jpg 1x, /img/1000/1000photo4@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo4.jpg 1x, /img/768/768photo4@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo4.jpg 1x, /img/480/480photo4@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo4.jpg"
+                                    srcset="/img/320/320photo4@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
                             <h3 class="directions__caption">Фотосессии</h3>
                             <p class="directions__desc">Уроки профессиональной верховой езды
                                 для любителей и начинающих</p>
@@ -142,8 +257,23 @@
                     </li>
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#" alt="Девушка скачет на лошади." width="250"
-                                height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo3.jpg 1x, /img/1920/1920photo3@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo3.jpg 1x, /img/1000/1000photo3@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo3.jpg 1x, /img/768/768photo3@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo3.jpg 1x, /img/480/480photo3@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo3.jpg"
+                                    srcset="/img/320/320photo3@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
                             <h3 class="directions__caption">Прогулки верхом с тренером</h3>
                             <p class="directions__desc">Тренировка клиентов, подготовка
                                 к занятиям конным спортом на профессиональном уровне под руководством опытных теннеров
@@ -152,8 +282,23 @@
                     </li>
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#"
-                                alt="Девушка стоит напротив лошади, протянув к ней руку." width="250" height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo2.jpg 1x, /img/1920/1920photo2@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo2.jpg 1x, /img/1000/1000photo2@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo2.jpg 1x, /img/768/768photo2@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo2.jpg 1x, /img/480/480photo2@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo2.jpg"
+                                    srcset="/img/320/320photo2@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
                             <h3 class="directions__caption">Прогулки верхом с тренером</h3>
                             <p class="directions__desc">Тренировка клиентов, подготовка
                                 к занятиям конным спортом на профессиональном уровне под руководством опытных теннеров
@@ -162,8 +307,23 @@
                     </li>
                     <li class="directions__item">
                         <div class="directions__card">
-                            <img class="directions__image" src="#" alt="Улыбающаяся девушка в шляпе, обнимает лошадь."
-                                width="250" height="150">
+                            <picture>
+                                <source media="(min-width: 1920px)"
+                                    srcset="/img/1920/1920photo1.jpg 1x, /img/1920/1920photo1@2x.jpg 2x" width="320"
+                                    height="220" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 1000px)"
+                                    srcset="/img/1000/1000photo1.jpg 1x, /img/1000/1000photo1@2x.jpg 2x" width="250"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 768px)"
+                                    srcset="/img/768/768photo1.jpg 1x, /img/768/768photo1@2x.jpg 2x" width="304"
+                                    height="181" alt="Девушка верхом на лошади.">
+                                <source media="(min-width: 480px)"
+                                    srcset="/img/480/480photo1.jpg 1x, /img/480/480photo1@2x.jpg 2x" width="200"
+                                    height="130" alt="Девушка верхом на лошади.">
+                                <img class="directions__image" src="/source/img/320/320photo1.jpg"
+                                    srcset="/img/320/320photo1@2x.jpg" alt="Девушка верхом на лошади." width="250"
+                                    height="150">
+                            </picture>
                             <h3 class="directions__caption">Фотосессии</h3>
                             <p class="directions__desc">Уроки профессиональной верховой езды
                                 для любителей и начинающих</p>
@@ -179,91 +339,292 @@
             <div class="visitors__wrapper">
                 <h2 class="visitors__title">Наши посетители</h2>
                 <div class="visitors__container">
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/1_1920.jpg 1x, /img/1920/visitor/1_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/1_1000.jpg 1x, /img/1000/visitor/1_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/1_768.jpg 1x, /img/768/visitor/1_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/1_480.jpg 1x, /img/480/visitor/1_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="182" height="120"
+                            srcset="/img/320/visitor/1_320.jpg 1x, /img/320/visitor/1_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/1_1920.jpg 1x, /img/1920/visitor/1_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/1_1000.jpg 1x, /img/1000/visitor/1_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/1_768.jpg 1x, /img/768/visitor/1_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/1_480.jpg 1x, /img/480/visitor/1_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="137" height="120"
+                            srcset="/img/320/visitor/2_320.jpg 1x, /img/320/visitor/2_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/1_1920.jpg 1x, /img/1920/visitor/1_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/1_1000.jpg 1x, /img/1000/visitor/1_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/1_768.jpg 1x, /img/768/visitor/1_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/1_480.jpg 1x, /img/480/visitor/1_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="137" height="120"
+                            srcset="/img/320/visitor/10_320.jpg 1x, /img/320/visitor/10_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/11_1920.jpg 1x, /img/1920/visitor/11_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/11_1000.jpg 1x, /img/1000/visitor/11_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/11_768.jpg 1x, /img/768/visitor/11_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/11_480.jpg 1x, /img/480/visitor/11_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="182" height="120"
+                            srcset="/img/320/visitor/11_320.jpg 1x, /img/320/visitor/11_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/13_1920.jpg 1x, /img/1920/visitor/13_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/13_1000.jpg 1x, /img/1000/visitor/13_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/13_768.jpg 1x, /img/768/visitor/13_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/13_480.jpg 1x, /img/480/visitor/13_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="182" height="120"
+                            srcset="/img/320/visitor/13_320.jpg 1x, /img/320/visitor/13_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/12_1920.jpg 1x, /img/1920/visitor/12_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/12_1000.jpg 1x, /img/1000/visitor/12_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/12_768.jpg 1x, /img/768/visitor/12_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/12_480.jpg 1x, /img/480/visitor/12_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="137" height="120"
+                            srcset="/img/320/visitor/12_320@2x.jpg 1x, /img/320/visitor/12_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/14_1920.jpg 1x, /img/1920/visitor/14_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/14_1000.jpg 1x, /img/1000/visitor/14_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/14_768.jpg 1x, /img/768/visitor/14_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/14_480.jpg 1x, /img/480/visitor/14_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="137" height="120"
+                            srcset="/img/320/visitor/14_320.jpg 1x, /img/320/visitor/14_320@2x.jpg 2x" alt="">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1920px)"
+                            srcset="/img/1920/visitor/15_1920.jpg 1x, /img/1920/visitor/15_1920@2x.jpg 2x" width="470"
+                            height="300" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 1000px)"
+                            srcset="/img/1000/visitor/15_1000.jpg 1x, /img/1000/visitor/15_1000@2x.jpg 2x" width="294"
+                            height="188" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 768px)"
+                            srcset="/img/768/visitor/15_768.jpg 1x, /img/768/visitor/15_768@2x.jpg 2x" width="223"
+                            height="155" alt="Девушка верхом на лошади.">
+                        <source media="(min-width: 480px)"
+                            srcset="/img/480/visitor/15_480.jpg 1x, /img/480/visitor/15_480@2x.jpg 2x" width="191"
+                            height="120" alt="Девушка верхом на лошади.">
+                        <img class="visitors__photo" width="182" height="120" src="/img/320/visitor/15_320.jpg"
+                            srcset="/img/320/visitor/15_320.jpg 1x, /img/320/visitor/15_320@2x.jpg 2x" alt="">
+                    </picture>
                     <img class="visitors__photo" src="" alt="">
                     <img class="visitors__photo" src="" alt="">
                     <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
-                    <img class="visitors__photo" src="" alt="">
+
+
                 </div>
                 <div class="visitors__scale range">
                     <div class="range__bar">
-                        <button class="range__toggle"><span class="visully-hidden"></span></button>
-                        <button class="range__toggle"><span class="visually-hidden"></span></button>
+                        <button class="range__toggle" type="button"><span class="visully-hidden"></span></button>
+                        <div class="range__bar-container">
+                            <button class="range__slider"></button>
+                            <button class="range__slider-button"></button>
+                            <button class="range__slider-button"></button>
+                            <button class="range__slider-button"></button>
+                            <button class="range__slider-button"></button>
+                        </div>
+                        <button class="range__toggle" type="button"><span class="visually-hidden"></span></button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="our-horses">
-            <div class="our-horses__wrapper">
-                <h2 class="our-horses__title">Наши лошади</h2>
-                <ul class="our-horses__list">
-                    <li class="our-horses__item">
-                        <div class="our-horses__card">
-                            <img class="our-horses__image" src="" alt="" width="230" height="290">
-                            <h3 class="our-horses__caption">Юджин</h3>
-                            <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и начинающих
-                            </p>
+            <h2 class="our-horses__title">Наши лошади</h2>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true">
+                <div class="our-horses__wrapper itc-slider__wrapper">
+                    <ul class="our-horses__list itc-slider__items">
+                        <li class="our-horses__item">
+                            <div class="our-horses__card itc-slider__item">
+                                <picture>
+                                    <source media="(min-width: 1920px)" srcset="/img/udjin.jpg 1x, /img/udjin@2x 2x"
+                                        width="320" height="421" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 1000px)" srcset="/img/udjin.jpg 1x, /img/udjin@2x 2x"
+                                        width="243" height="320" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 768px)" srcset="/img/udjin.jpg 1x, /img/udjin@2x 2x"
+                                        width="210" height="252" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 480px)" srcset="/img/udjin.jpg 1x, /img/udjin@2x 2x"
+                                        width="189" height="225" alt="Девушка верхом на лошади.">
+                                    <img class="our-horses__image" srcset="/img/udjin.jpg 1x, /img/udjin@2x 2x" alt=""
+                                        width="230" height="290">
+                                </picture>
+
+                                <h3 class="our-horses__caption">Юджин</h3>
+                                <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и
+                                    начинающих
+                                </p>
+                            </div>
+                        </li>
+                        <li class="our-horses__item">
+                            <div class="our-horses__card itc-slider__item">
+                                <picture>
+                                    <source media="(min-width: 1920px)" srcset="/img/jazel.jpg 1x, /img/jazel@2x 2x"
+                                        width="320" height="421" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 1000px)" srcset="/img/jazel.jpg 1x, /img/jazel@2x 2x"
+                                        width="243" height="320" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 768px)" srcset="/img/jazel.jpg 1x, /img/jazel@2x 2x"
+                                        width="210" height="252" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 480px)" srcset="/img/jazel.jpg 1x, /img/jazel@2x 2x"
+                                        width="189" height="225" alt="Девушка верхом на лошади.">
+                                    <img class="our-horses__image" srcset="/img/jazel.jpg 1x, /img/jazel@2x 2x" alt=""
+                                        width="230" height="290">
+                                </picture>
+                                <h3 class="our-horses__caption">Жазель</h3>
+                                <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и
+                                    начинающих
+                                </p>
+                            </div>
+                        </li>
+                        <li class="our-horses__item">
+                            <div class="our-horses__card itc-slider__item">
+                                <picture>
+                                    <source media="(min-width: 1920px)" srcset="/img/melissa.jpg 1x, /img/melissa@2x 2x"
+                                        width="320" height="421" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 1000px)" srcset="/img/melissa.jpg 1x, /img/melissa@2x 2x"
+                                        width="243" height="320" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 768px)" srcset="/img/melissa.jpg 1x, /img/melissa@2x 2x"
+                                        width="210" height="252" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 480px)" srcset="/img/melissa.jpg 1x, /img/melissa@2x 2x"
+                                        width="189" height="225" alt="Девушка верхом на лошади.">
+                                    <img class="our-horses__image" srcset="/img/melissa.jpg 1x, /img/melissa@2x 2x"
+                                        alt="" width="230" height="290">
+                                </picture>
+                                <h3 class="our-horses__caption">Мелисса</h3>
+                                <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и
+                                    начинающих
+                                </p>
+                            </div>
+                        </li>
+                        <li class="our-horses__item">
+                            <div class="our-horses__card itc-slider__item">
+                                <picture>
+                                    <source media="(min-width: 1920px)" srcset="/img/cian.jpg 1x, /img/cian@2x 2x"
+                                        width="320" height="421" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 1000px)" srcset="/img/cian.jpg 1x, /img/cian@2x 2x"
+                                        width="243" height="320" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 768px)" srcset="/img/cian.jpg 1x, /img/cian@2x 2x"
+                                        width="210" height="252" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 480px)" srcset="/img/cian.jpg 1x, /img/cian@2x 2x"
+                                        width="189" height="225" alt="Девушка верхом на лошади.">
+                                    <img class="our-horses__image" srcset="/img/cian.jpg 1x, /img/cian@2x 2x" alt=""
+                                        width="230" height="290">
+                                </picture>
+                                <h3 class="our-horses__caption">Циан</h3>
+                                <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и
+                                    начинающих
+                                </p>
+                            </div>
+                        </li>
+                        <li class="our-horses__item">
+                            <div class="our-horses__card itc-slider__item">
+                                <picture>
+                                    <source media="(min-width: 1920px)" srcset="/img/hesana.jpg 1x, /img/hesana@2x 2x"
+                                        width="320" height="421" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 1000px)" srcset="/img/hesana.jpg 1x, /img/hesana@2x 2x"
+                                        width="243" height="320" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 768px)" srcset="/img/hesana.jpg 1x, /img/hesana@2x 2x"
+                                        width="210" height="252" alt="Девушка верхом на лошади.">
+                                    <source media="(min-width: 480px)" srcset="/img/hesana.jpg 1x, /img/hesana@2x 2x"
+                                        width="189" height="225" alt="Девушка верхом на лошади.">
+                                    <img class="our-horses__image" srcset="/img/hesana.jpg 1x, /img/hesana@2x 2x" alt=""
+                                        width="230" height="290">
+                                </picture>
+                                <h3 class="our-horses__caption">Хесана</h3>
+                                <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и
+                                    начинающих
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="our-horses__scale range">
+                        <div class="range__bar">
+                            <button class="range__toggle itc-slider__btn itc-slider__btn_prev" type="button"><span
+                                    class="visully-hidden"></span></button>
+                            <div class="range__bar-container">
+                                <button class="range__slider"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                            </div>
+                            <button class="range__toggle itc-slider__btn itc-slider__btn_next" type="button"><span
+                                    class="visually-hidden"></span></button>
                         </div>
-                    </li>
-                    <li class="our-horses__item">
-                        <div class="our-horses__card">
-                            <img class="our-horses__image" src="" alt="" width="230" height="290">
-                            <h3 class="our-horses__caption">Жазель</h3>
-                            <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и начинающих
-                            </p>
-                        </div>
-                    </li>
-                    <li class="our-horses__item">
-                        <div class="our-horses__card">
-                            <img class="our-horses__image" src="" alt="" width="230" height="290">
-                            <h3 class="our-horses__caption">Мелисса</h3>
-                            <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и начинающих
-                            </p>
-                        </div>
-                    </li>
-                    <li class="our-horses__item">
-                        <div class="our-horses__card">
-                            <img class="our-horses__image" src="" alt="" width="230" height="290">
-                            <h3 class="our-horses__caption">Циан</h3>
-                            <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и начинающих
-                            </p>
-                        </div>
-                    </li>
-                    <li class="our-horses__item">
-                        <div class="our-horses__card">
-                            <img class="our-horses__image" src="" alt="" width="230" height="290">
-                            <h3 class="our-horses__caption">Хесана</h3>
-                            <p class="our-horses__desc">Уроки профессиональной верховой езды для любителей и начинающих
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="our-horses__scale range">
-                    <div class="range__bar">
-                        <button class="range__toggle"><span class="visully-hidden"></span></button>
-                        <button class="range__toggle"><span class="visually-hidden"></span></button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="questions">
             <div class="questions__wrapper">
-                <form class="questions__form form" action="">
+                <form class="questions__form form" action="https://echo.htmlacademy.ru/" method="get">
                     <h2 class="form__title">Отвечаем на вопросы</h2>
-                    <p class="form__desc">Мы ответим на все ваши вопросы по телефону,
-                        или вы можете записаться на бесплатное
+                    <p class="form__desc">Мы ответим на все ваши вопросы по <br> телефону,
+                        или вы можете записаться<br> на <b>бесплатное</b>
                         пробное занятие</p>
-                    <input class="form__name input" type="text" placeholder="Ваше имя">
-                    <input class="form__name input" type="text" placeholder="Ваш телефон">
-                    <button class="form__button button">Задать вопрос</button>
-                    <label class="form__label" for="">
-                        <input class="form__checkbox" type="checkbox" name="agree" checked>
+                    <input class="form__name-input" type="text" placeholder="Ваше имя" name="name">
+                    <input class="form__name-input" type="text" placeholder="Ваш телефон" name="phone">
+                    <button class="form__button button" type="submit">Задать вопрос</button>
+                    <label class="form__label">
+                        <input class="visually-hidden form__checkbox" type="checkbox" name="agree" checked>
                         <span class="form__mark"></span>
                         <span class="form__name">Даю согласие на обработку данных</span>
                     </label>
@@ -271,37 +632,140 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="reviews__wrapper">
-                <h2 class="reviews__title">О нас говорят клиенты</h2>
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <blockquote class="reviews__blockquote">
-                            <cite class="reviews__cite">Развивает силу, гибкость и координацию всадника; Выпрямляется
-                                осанка
-                                и повышается стрессоустойчивость; Общение с лошадью лечит умственные отклонения.</cite>
-                            <button class="reviews__butoon">Подробнее </button>
-                            <div class="reviews__container">
-                                <img class="reviews__avatar" src="" alt="">
-                                <p class="reviews__name">Константин Сюткин</p>
-                                <ul class="reviews__icon-list">
-                                    <li class="reviews__icon-item"> <svg class="reviews__icon" width="18" height="18">
-                                            <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
-                                        </svg></li>
-                                    <li class="reviews__icon-item"> <svg class="reviews__icon" width="18" height="18">
-                                            <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
-                                        </svg></li>
-                                </ul>
+            <h2 class="reviews__title">О нас говорят клиенты</h2>
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="reviews__wrapper itc-slider__wrapper">
+                    <ul class="reviews__list itc-slider__items">
+                        <li class="reviews__item">
+                            <div class="reviews__card itc-slider__item">
+                                <blockquote class="reviews__blockquote">
+                                    <cite class="reviews__cite">Развивает силу, гибкость и координацию всадника;
+                                        Выпрямляется
+                                        осанка
+                                        и <br> повышается стрессоустойчивость; <br> Общение с лошадью лечит умственные
+                                        отклонения.</cite>
+                                </blockquote>
+                                <button class="reviews__butoon">Подробнее </button>
+                                <div class="reviews__container">
+                                    <img class="reviews__avatar" src="/img/user-1.png" alt="" width="45" height="67">
+                                    <p class="reviews__name">Константин Сюткин</p>
+                                    <ul class="reviews__icon-list">
+                                        <li class="reviews__icon-item">
+                                            <svg class="reviews__icon" width="18" height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="reviews__icon-item"> <svg class="reviews__icon" width="18"
+                                                height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <svg class="reviews__decor" width="30" height="25" viewBox="0 0 30 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.75503 0C2.57753 0 2.67102e-08 2.54375 5.96654e-08 5.68225C9.26008e-08 8.81885 2.57753 11.3645 5.75503 11.3645C11.5081 11.3645 7.67337 22.3483 2.34664e-07 22.3483L2.62508e-07 25C13.6948 25.0019 19.0611 0 5.75503 0ZM22.3333 0C19.1578 0 16.5802 2.54375 16.5802 5.68225C16.5802 8.81885 19.1578 11.3645 22.3333 11.3645C28.0883 11.3645 24.2536 22.3483 16.5802 22.3483L16.5802 25C30.2731 25.0019 35.6393 0 22.3333 0Z"
+                                            fill="#EAEAEA" />
+                                    </svg>
+
+                                </div>
                             </div>
-                        </blockquote>
-                    </li>
-                </ul>
-                <div class="reviews__scale range">
-                    <div class="range__bar">
-                        <button class="range__toggle"><span class="visully-hidden"></span></button>
-                        <button class="range__toggle"><span class="visually-hidden"></span></button>
+
+
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__card itc-slider__item">
+                                <blockquote class="reviews__blockquote">
+                                    <cite class="reviews__cite">Развивает силу, гибкость и координацию всадника;
+                                        Выпрямляется
+                                        осанка
+                                        и <br> повышается стрессоустойчивость; <br> Общение с лошадью лечит умственные
+                                        отклонения.</cite>
+                                </blockquote>
+                                <button class="reviews__butoon">Подробнее </button>
+                                <div class="reviews__container">
+                                    <img class="reviews__avatar" src="/img/user-1.png" alt="" width="45" height="67">
+                                    <p class="reviews__name">Константин Сюткин</p>
+                                    <ul class="reviews__icon-list">
+                                        <li class="reviews__icon-item">
+                                            <svg class="reviews__icon" width="18" height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="reviews__icon-item"> <svg class="reviews__icon" width="18"
+                                                height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <svg class="reviews__decor" width="30" height="25" viewBox="0 0 30 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.75503 0C2.57753 0 2.67102e-08 2.54375 5.96654e-08 5.68225C9.26008e-08 8.81885 2.57753 11.3645 5.75503 11.3645C11.5081 11.3645 7.67337 22.3483 2.34664e-07 22.3483L2.62508e-07 25C13.6948 25.0019 19.0611 0 5.75503 0ZM22.3333 0C19.1578 0 16.5802 2.54375 16.5802 5.68225C16.5802 8.81885 19.1578 11.3645 22.3333 11.3645C28.0883 11.3645 24.2536 22.3483 16.5802 22.3483L16.5802 25C30.2731 25.0019 35.6393 0 22.3333 0Z"
+                                            fill="#EAEAEA" />
+                                    </svg>
+
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__card itc-slider__item">
+                                <blockquote class="reviews__blockquote">
+                                    <cite class="reviews__cite">Развивает силу, гибкость и координацию всадника;
+                                        Выпрямляется
+                                        осанка
+                                        и <br> повышается стрессоустойчивость; <br> Общение с лошадью лечит умственные
+                                        отклонения.</cite>
+                                </blockquote>
+                                <button class="reviews__butoon">Подробнее </button>
+                                <div class="reviews__container">
+                                    <img class="reviews__avatar" src="/img/user-1.png" alt="" width="45" height="67">
+                                    <p class="reviews__name">Константин Сюткин</p>
+                                    <ul class="reviews__icon-list">
+                                        <li class="reviews__icon-item">
+                                            <svg class="reviews__icon" width="18" height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </li>
+                                        <li class="reviews__icon-item"> <svg class="reviews__icon" width="18"
+                                                height="18">
+                                                <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <svg class="reviews__decor" width="30" height="25" viewBox="0 0 30 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.75503 0C2.57753 0 2.67102e-08 2.54375 5.96654e-08 5.68225C9.26008e-08 8.81885 2.57753 11.3645 5.75503 11.3645C11.5081 11.3645 7.67337 22.3483 2.34664e-07 22.3483L2.62508e-07 25C13.6948 25.0019 19.0611 0 5.75503 0ZM22.3333 0C19.1578 0 16.5802 2.54375 16.5802 5.68225C16.5802 8.81885 19.1578 11.3645 22.3333 11.3645C28.0883 11.3645 24.2536 22.3483 16.5802 22.3483L16.5802 25C30.2731 25.0019 35.6393 0 22.3333 0Z"
+                                            fill="#EAEAEA" />
+                                    </svg>
+
+                                </div>
+                            </div>
+
+
+                        </li>
+                    </ul>
+                    <div class="our-horses__scale range">
+                        <div class="range__bar">
+                            <button class="range__toggle itc-slider__btn itc-slider__btn_prev" type="button"><span
+                                    class="visully-hidden"></span></button>
+                            <div class="range__bar-container">
+                                <button class="range__slider"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                                <button class="range__slider-button"></button>
+                            </div>
+                            <button class="range__toggle itc-slider__btn itc-slider__btn_next" type="button"><span
+                                    class="visually-hidden"></span></button>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="contacts">
             <div class="contacts__wrapper">
@@ -360,6 +824,7 @@
         </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/itc-slider.js" defer></script>
 </body>
 
 </html>

@@ -20,8 +20,9 @@
     "gulp-less": "^5.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
-    "gulp-stylelint": "^13.0.0",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.21",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
